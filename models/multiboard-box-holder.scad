@@ -1,5 +1,4 @@
-// A simple box holder for the Multiboard system.
-// Uses a [Pegboard Click](https://thangs.com/designer/Multiboard/3d-model/Pegboard%20Click%20-%20STL%20Multiboard%20Remixing%20Files-994661) for mounting.
+// A simple box holder for the Multiboard system. Uses a [Pegboard Click](https://thangs.com/designer/Multiboard/3d-model/Pegboard%20Click%20-%20STL%20Multiboard%20Remixing%20Files-994661) for mounting.
 
 /// START CUSTOMIZATION
 
@@ -23,8 +22,8 @@ outer_depth = inner_depth+(thickness*2);
 difference() {
     cube([outer_height, outer_depth, width], center = false);
 
-    translate([thickness,thickness,0]) {
-        cube([inner_height,inner_depth, width], center = false);
+    translate([thickness, thickness, 0]) {
+        cube([inner_height, inner_depth, width], center = false);
     }
 }
 
